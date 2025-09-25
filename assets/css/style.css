@@ -423,23 +423,35 @@ main > .section + .section {
   inset: 0;
   display: none;
   place-items: center;
-  background: linear-gradient(160deg, rgba(6, 10, 19, 0.82), rgba(10, 18, 36, 0.96));
-  backdrop-filter: blur(32px);
+  width: 100vw;
+  min-height: 100vh;
+  padding: clamp(2.4rem, 6vh, 3.8rem) clamp(1.8rem, 6vw, 2.8rem);
+  background: rgba(2, 4, 12, 0.78);
+  backdrop-filter: blur(34px);
   transform: translateY(-100%);
-  transition: transform var(--transition-soft);
-  z-index: 850;
+  opacity: 0;
+  transition: transform var(--transition-soft), opacity var(--transition-soft);
+  z-index: 1200;
+  overflow-y: auto;
 }
 
 .mobile-menu.is-visible {
   display: grid;
   transform: translateY(0);
+  opacity: 1;
 }
 
+
 .mobile-menu__inner {
-  width: min(90vw, 420px);
+  width: min(92vw, 420px);
   text-align: center;
   display: grid;
-  gap: 2rem;
+  gap: clamp(2rem, 5vh, 2.8rem);
+  padding: clamp(1.8rem, 5vh, 2.4rem);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(160deg, rgba(12, 18, 40, 0.92), rgba(18, 28, 58, 0.86));
+  box-shadow: var(--shadow-strong);
 }
 
 .mobile-menu__list {
@@ -455,11 +467,8 @@ main > .section + .section {
   list-style: none;
 }
 
-.mobile-menu__meta {
-  display: grid;
-  gap: 0.65rem;
-  color: var(--color-text-muted);
-  font-size: 0.95rem;
+.mobile-menu__list a {
+  color: var(--color-text);
 }
 
 /* Buttons */
@@ -670,6 +679,9 @@ main > .section + .section {
   justify-content: center;
   gap: 1rem;
   font-size: 0.9rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .profile-card__links a {
@@ -1576,6 +1588,24 @@ main > .section + .section {
 
   .page-hero {
     padding-top: calc(var(--header-h) + var(--space-md));
+  }
+
+  .page-hero--compact {
+    padding-block: calc(var(--header-h) + var(--space-2xs)) var(--space-2xs);
+  }
+
+  .page-hero__inner {
+    gap: var(--space-2xs);
+  }
+
+  .scroll-indicator {
+    margin-top: var(--space-xs);
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+  }
+
+  .scroll-indicator__mouse {
+    height: 32px;
   }
 
   .hero__contact {
