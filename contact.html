@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Dr. Sunil Kumawat – share your project or collaboration idea through a glassmorphic form.">
+  <title>Contact · Dr. Sunil Kumawat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js" defer></script>
+</head>
+<body data-theme="dark" data-page="contact">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="scene" aria-hidden="true">
+    <div class="scene__layer scene__layer--one"></div>
+    <div class="scene__layer scene__layer--two"></div>
+    <div class="scene__layer scene__layer--grid"></div>
+  </div>
+
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html#home" aria-label="Sunil Kumawat home">
+
+        
+        <span class="logo__text">Sunil <b>Kumawat</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav__list">
+          <li><a class="nav-link" data-page-link="home" href="index.html#home">Home</a></li>
+          <li><a class="nav-link" data-page-link="about" href="index.html#about">About</a></li>
+          <li><a class="nav-link" data-page-link="resume" href="resume.html">Resume</a></li>
+          <li><a class="nav-link" data-page-link="portfolio" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link" data-page-link="contact" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__actions">
+        <button class="header-btn header-btn--theme" type="button" data-theme-toggle aria-label="Toggle theme">
+          <span aria-hidden="true">☀️</span>
+        </button>
+        <button class="header-btn header-btn--menu" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-menu">
+          <span class="menu-icon"><span></span><span></span><span></span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" data-mobile-nav>
+      <div class="mobile-menu__inner">
+        <nav aria-label="Mobile">
+          <ul class="mobile-menu__list">
+            <li><a class="nav-link" data-page-link="home" href="index.html#home">Home</a></li>
+            <li><a class="nav-link" data-page-link="about" href="index.html#about">About</a></li>
+            <li><a class="nav-link" data-page-link="resume" href="resume.html">Resume</a></li>
+            <li><a class="nav-link" data-page-link="portfolio" href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav-link" data-page-link="contact" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__meta">
+          <a class="meta-link" href="mailto:sunilkumawatsir@gmail.com">sunilkumawatsir@gmail.com</a>
+          <a class="meta-link" href="tel:+919414044427">+91 94140 44427</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container page-hero__inner" data-reveal>
+        <span class="eyebrow">Contact</span>
+        <h1>Let's co-create the next learning breakthrough.</h1>
+        <p>Share your goals, and I’ll respond within 24 hours with a tailored perspective that blends pedagogy, technology, and leadership insight.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="container contact__grid">
+        <article class="contact-card glass" data-reveal>
+          <h2>Connect directly</h2>
+          <p>Whether you need curriculum consultation, faculty training, or student mentorship, I’m ready to help craft a meaningful strategy.</p>
+          <ul class="contact-card__list">
+            <li>
+              <span>Email</span>
+              <a href="mailto:sunilkumawatsir@gmail.com">sunilkumawatsir@gmail.com</a>
+            </li>
+            <li>
+              <span>Phone</span>
+              <a href="tel:+919414044427">+91 94140 44427</a>
+            </li>
+            <li>
+              <span>Birthday</span>
+              <time datetime="1974-09-21">September 21, 1974</time>
+            </li>
+            <li>
+              <span>Location</span>
+              <address>Jaipur, Rajasthan, India</address>
+            </li>
+          </ul>
+          <div class="contact-card__social" aria-label="Social links">
+            <a class="social-icon" href="https://wa.me/9414044427" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://www.linkedin.com/in/sunilkumawat74/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a class="social-icon" href="#" aria-label="Twitter">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a class="social-icon" href="#" aria-label="Telegram">
+              <ion-icon name="logo-telegram"></ion-icon>
+            </a>
+          </div>
+        </article>
+
+        <form class="contact-form glass" data-reveal data-form>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-field">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="contact-phone">Phone</label>
+              <input id="contact-phone" name="phone" type="tel" autocomplete="tel" placeholder="Your phone number">
+            </div>
+            <div class="form-field">
+              <label for="contact-role">Designation</label>
+              <input id="contact-role" name="designation" type="text" placeholder="Your role or organization">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="contact-subject">Subject</label>
+            <input id="contact-subject" name="subject" type="text" placeholder="Project or enquiry subject" required>
+          </div>
+          <div class="form-field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project or question" required></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit" data-form-btn>Send message</button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Dr. Sunil Kumawat. Guided by curiosity and compassion.</p>
+      <ul class="footer__social">
+        <li><a href="https://wa.me/9414044427" target="_blank" rel="noreferrer">WhatsApp</a></li>
+        <li><a href="https://www.linkedin.com/in/sunilkumawat74/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+        <li><a href="mailto:sunilkumawatsir@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">
+    <span>↑</span>
+  </button>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
