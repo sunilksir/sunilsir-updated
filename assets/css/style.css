@@ -4,8 +4,8 @@
  */
 
 :root {
-  --font-base: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-display: 'Orbitron', 'Inter', sans-serif;
+  --font-base: 'Manrope', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Poppins', 'Manrope', 'Segoe UI', sans-serif;
   --font-size-base: 16px;
 
   --color-bg: #060a13;
